@@ -34,28 +34,26 @@
               </span></div>
       </div>
     </div> -->
-
+    <!-- <section class="eventFilter">
+      <div>
+        <FilterForm @filter-applied="applyFilter" @filter-reset="resetFilter"></FilterForm><event-filter></event-filter></div>
+    </section> -->
     <div class="container">
       <ul>   
-          <li>
-          <span class=""><WelcomeToOpportunity msg="Welcome to Opportunity"/></span>
+        <li>
+          <span class=""><WelcomeToOpportunity msg="Welcome today to Opportunity"/></span>
         </li>
       </ul>
-        <ul class="infoBox">           
-          <li>
-          <span class="li-time">{{ currentdate }}19:30 Uhr</span><br>
-          <span class="li-topic">{{ title }}Besuch</span><br>
-          <span class="li-info">{{ info }}Interessierte können uns gerne für den zweiten Kurs besuchen</span>
-          </li>
-        </ul>
-        <ul class="infoBox">   
-          <li>
-          <span class="li-time">{{ currentdate }}19:30 Uhr</span><br>
-          <span class="li-topic">{{ title }}Besuch</span><br>
-          <span class="li-info">{{ info }}Interessierte können uns gerne für den zweiten Kurs besuchen</span>
-        </li>
-      </ul>
+      
+        <event-component></event-component>
     </div>
+
+
+    
+    
+
+    
+
 
   <footer>
     <div class="footer-wrapper">
@@ -76,13 +74,17 @@
 <script>
 /* import HelloWorld from './components/HelloWorld.vue' */
 import WelcomeToOpportunity from './components//WelcomeToOpportunity.vue'
-
+import EventComponent from './components/EventComponent.vue';
+/* import EventFilter from "@/components/EventFilter.vue"; */
 export default {
   name: 'App',
   components: {
     /* HelloWorld, */
-    WelcomeToOpportunity, 
+    WelcomeToOpportunity,
+    EventComponent,
+    /* EventFilter, */
   }
+ 
 }
 </script>
 
@@ -93,54 +95,14 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
-
-
 body {
  
   margin-bottom:25vh;
 }
-
-.infoBoxBs {
+/* .infoBoxBs {
   background-color: #0F05A0;
   padding-left:25px;
-
-}
-
-.infoBox {
-  width:80%;
-  margin: 0 auto;
-  margin-top:20px;
-  width:960px;
-  height:182px;
-  /* height:fit-content;  fit content*/
-  background-color: #0F05A0;
-  padding:25px;
-  text-decoration:none;
-}
-
-.li-time {
-  font-family: 'Inter', sans-serif;
-  font-size:28px;
-  font-weight:900;
-  color:#EB5E00;
-}
-
-.li-topic {
-  font-family: 'Inter', sans-serif;
-  font-size:28px;
-  font-weight:900;
-  color:#FFBFAB;
-  text-decoration:none;
-}
-
-.li-info {
-  font-family: 'Inter', sans-serif;
-  font-size:28px;
-  font-weight:500;
-  color:#FFBFAB;
-}
-
+} */
 footer {
   background-color:white;
   padding: 20px;
@@ -148,7 +110,6 @@ footer {
   bottom: 0;
   z-index: 1;
 }
-
 .footer-wrapper {
   display: flex;
   justify-content: space-between;
@@ -156,17 +117,14 @@ footer {
   max-width: 100%;
   margin: 0 auto;
 }
-
 .footer-item {
   flex-basis: calc(33.33% - 10px);
   text-align: center;
 }
-
 .footer-item img {
   max-width: 100%;
  
 }
-
 ul {
   list-style: none;
 }
