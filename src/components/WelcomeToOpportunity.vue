@@ -36,18 +36,11 @@
   </script>
   
   
-  <!-- Add "scoped" attribute to limit CSS to this component only -->
+  <!-- Add "scoped" attribute -->
   <style scoped>
-  /* h1 {
-      font-size: 60px;
-      font-weight:bold;
-      text-align:left;
-  }
-  h3 {
-    margin: 40px 0 0;
-  }
-   */
+  
   .titleWelcome {
+    margin-top: 30px;
     font-family: 'Inter', sans-serif;
     font-size:62px;
     font-weight:900;
@@ -56,18 +49,14 @@
   
   
   .titleTimeDate {
+    margin-top: 20px;
+    margin-bottom: 20px;
     font-family: 'Inter', sans-serif;
     font-size:62px;
     font-weight:500;
     color:#9AA7B1;
     margin-left:0; 
   }
-   
-  /*  ul {
-    list-style-type: none;
-    padding: 0;
-  }
-   */
   
   a {
     color: #42b983;

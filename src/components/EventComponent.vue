@@ -1,17 +1,3 @@
-<!-- <template>
-  <div class="container">
-    <div class="row justify-content-evenly">
-      <div><WelcomeToOpportunity msg="Welcome to Opportunity"/></div>
-      <div class="col-12 m-3 infoBoxBs" v-for="(event, index) in events" :key="index">
-        <span class="m-3">
-          <li class="list-group-item li-time">{{ event.eventDate}} / {{ event.eventTime }}</li>
-          <li class="list-group-item li-topic">{{ event.eventTitle }}</li>
-          <li class="list-group-item li-info">{{ event.eventInfo }}</li>
-        </span>
-      </div>
-    </div>
-  </div>
-</template> -->
 <template>
     <div v-if="events.length">
       <ul v-for="(event, index) in events" :key="index" class="infoBox">
@@ -27,26 +13,6 @@
       <h2>No events currently listed.</h2>
     </div>
   </template>
-  
-  <!-- <template>
-    <div>
-      <FilterForm @filter-applied="applyFilter" @filter-reset="resetFilter"></FilterForm>
-  
-      <div v-if="events.length">
-        <ul v-for="(event, index) in filteredEvents" :key="index" class="infoBox">
-          <li>
-            <span class="li-time">{{ event.eventDate}} / {{ event.eventTime }}</span><br>
-            <span class="li-topic">{{ event.eventTitle }}</span><br>
-            <span class="li-info">{{ event.eventInfo }}</span>
-          </li>
-        </ul>
-      </div>
-      <div v-else>
-        <h2>No events currently listed.</h2>
-      </div>
-    </div>
-  </template> -->
-  
   
   <script>
   /* import EventComponent from "@/components/EventComponent.vue"; */

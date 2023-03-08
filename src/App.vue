@@ -3,39 +3,11 @@
     <div class="row">
       <div class="col text-center" style="font-size:50px;font-weight:bold;">
     
-<!-- <HelloWorld msg="Welcome to Your Vue.js App"/> -->
-<!-- <WelcomeToOpportunity msg="Welcome to Opportunity"/> -->
       </div>
     </div>
   </div>
 
-  <!-- <div class="container">
-      <div class="row justify-content-evenly">
-        <div><WelcomeToOpportunity msg="Welcome to Opportunity"/></div>
-        <div class="col-12 m-3 infoBoxBs">
-          <span class="m-3">
-              <li class="list-group-item li-time">{{ currentdate }}19:30 Uhr</li>
-              <li class="list-group-item li-topic">{{ title }}Besuch</li>
-              <li class="list-group-item li-info">{{ info }}Interessierte können uns gerne für den zweiten Kurs besuchen</li>
-              </span></div>
-        <div class="col-12 m-3 infoBoxBs">
-          <span class="m-3">
-              <li class="list-group-item li-time">{{ currentdate }}19:30 Uhr</li>
-              <li class="list-group-item li-topic">{{ title }}Besuch</li>
-              <li class="list-group-item li-info">{{ info }}Interessierte können uns gerne für den zweiten Kurs besuchen</li>
-              </span></div>
-        <div class="col-12 m-3 infoBoxBs">
-          <span class="m-3">
-              <li class="list-group-item li-time">{{ currentdate }}19:30 Uhr</li>
-              <li class="list-group-item li-topic">{{ title }}Besuch</li>
-              <li class="list-group-item li-info">{{ info }}Interessierte können uns gerne für den zweiten Kurs besuchen</li>
-              </span></div>
-      </div>
-    </div> -->
-    <!-- <section class="eventFilter">
-      <div>
-        <FilterForm @filter-applied="applyFilter" @filter-reset="resetFilter"></FilterForm><event-filter></event-filter></div>
-    </section> -->
+ 
     <div class="container">
       <ul>   
         <li>
@@ -45,14 +17,7 @@
       
         <event-component></event-component>
     </div>
-
-
-    
-    
-
-    
-
-
+<!-- logo footer -->
   <footer>
     <div class="footer-wrapper">
       <div class="footer-item">
