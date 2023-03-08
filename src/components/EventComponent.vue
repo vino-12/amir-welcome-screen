@@ -15,13 +15,11 @@
   </template>
   
   <script>
-  /* import EventComponent from "@/components/EventComponent.vue"; */
+ 
   import axios from 'axios';
   
   export default {
-   /*  components: {
-      EventComponent,
-    }, */
+
     data() {
       return {
         events: [],
