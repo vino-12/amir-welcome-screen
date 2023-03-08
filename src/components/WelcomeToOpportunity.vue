@@ -51,7 +51,7 @@
     font-family: 'Inter', sans-serif;
     font-size:62px;
     font-weight:900;
-    margin-left:-10px; 
+    font-style: normal ;
   }
   
   
@@ -60,8 +60,7 @@
     font-size:62px;
     font-weight:500;
     color:#9AA7B1;
-    text-decoration:none;
-    margin-left:-10px; 
+    margin-left:0; 
   }
    
   /*  ul {

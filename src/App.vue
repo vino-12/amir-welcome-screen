@@ -2,9 +2,7 @@
   <div class="container">
     <div class="row">
       <div class="col text-center" style="font-size:50px;font-weight:bold;">
-        <img alt="Vue logo" src="./assets/logo.png" style="width:10%; items-align:center;">@
-<!-- <i class="fa-solid fa-at fa-4x" style="color:black;"></i> -->
-        <img alt="Vue logo" src="./assets/Opportunity.png">
+    
 <!-- <HelloWorld msg="Welcome to Your Vue.js App"/> -->
 <!-- <WelcomeToOpportunity msg="Welcome to Opportunity"/> -->
       </div>
@@ -41,7 +39,7 @@
     <div class="container">
       <ul>   
         <li>
-          <span class=""><WelcomeToOpportunity msg="Welcome today to Opportunity"/></span>
+          <span class=""><WelcomeToOpportunity msg="Welcome to Opportunity"/></span>
         </li>
       </ul>
       
@@ -96,7 +94,7 @@ export default {
   -moz-osx-font-smoothing: grayscale;
 }
 body {
- 
+  background-color: #E8EFF4;
   margin-bottom:25vh;
 }
 /* .infoBoxBs {

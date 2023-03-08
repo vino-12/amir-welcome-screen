@@ -71,7 +71,7 @@
       fetchData() {
         axios
           .get(
-            'https://docs.google.com/spreadsheets/d/e/2PACX-1vTWMQ1bHW9tkX0eeaIJOw-4fphuRuqwh8KvAoTpPut1JC72CZuaFSnUJEA7cgeNaEDI51YRdOW3V50D/pub?output=csv'
+            'https://docs.google.com/spreadsheets/d/e/2PACX-1vTGzcXLquYTzTma9c_Fj5Y0aJV0N_WgL9HpIPlqvQisneB-juhwtxTUNHSbYUqZv1NUc7i3w_KiacmO/pub?output=csv'
           )
           .then((response) => {
             const data = response.data
